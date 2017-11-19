@@ -4,15 +4,11 @@ import java.io.File;
 
 public class Main {
 
-	public static void main(String[] args) 
-	{
-		File _folder = new File("c:\\doc");
-		ManagerFiles _managerFiles = new ManagerFiles(_folder);
+	public static void main(String[] args) {
+		File _pasta = new File("/home/deyvison/Downloads/docs");
+		ManagerFiles gerenciador = new ManagerFiles(_pasta);
 		
-		for (File file : _managerFiles.listFilesInFolder()) 
-		{
-			System.out.println(file);
-		}
+//		gerenciador.createFile();
+		System.out.println(gerenciador.readMFT());
 	}
-
 }
